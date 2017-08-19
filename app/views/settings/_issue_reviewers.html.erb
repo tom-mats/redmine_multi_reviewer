@@ -1,0 +1,5 @@
+<% @settings = {} unless @settings.is_a? Hash %>
+<p>
+  <label><%= l(:label_reviewers_log) %></label>
+  <%= check_box_tag 'settings[reviewers_log]', 1, @settings[:reviewers_log] %>
+</p>
